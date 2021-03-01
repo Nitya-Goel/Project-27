@@ -7,8 +7,8 @@ class bob {
           'density':0.8
       }
       
-      this.r = radius
-      this.body = Bodies.circle(x, y, this.r, options);
+      this.radius = radius
+      this.body = Bodies.circle(x, y, this.radius, options);
       World.add(world, this.body);
       
     }
@@ -18,7 +18,7 @@ class bob {
       translate(pos.x, pos.y);
       ellipseMode(RADIUS);
       fill("Yellow");
-      ellipse(0,0, this.r,this.r);
+      ellipse(0,0, this.radius,this.radius);
       pop();
     }
   }
