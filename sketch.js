@@ -38,7 +38,7 @@ function draw() {
   rectMode(CENTER);
   background("grey");
   Engine.update(engine);
-  drawSprites();
+	
  roofObject.display(); 
  bob1.display();
  bob2.display();
@@ -50,7 +50,7 @@ function draw() {
  rope3.display();
  rope4.display();
  rope5.display();
- keyPressed();
+ drawSprites();
 }
 
 function keyPressed(){
