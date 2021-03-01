@@ -1,6 +1,6 @@
 class roof
 {
-	constructor(x,y,w,h)
+	constructor(x,y,width,height)
 	{
 		var options={
 			isStatic:true			
