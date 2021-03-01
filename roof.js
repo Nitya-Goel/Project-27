@@ -5,11 +5,10 @@ class roof
 		var options={
 			isStatic:true			
 			}
-		this.x=x;
-		this.y=y;
-		this.w=width;
-		this.h=height;
-		this.body=Bodies.rectangle(this.x, this.y, this.w, this.h, options);
+		
+		this.width=width;
+		this.height=height;
+		this.body=Bodies.rectangle(x, y, this.width, this.height, options);
  		World.add(world, this.body);
 
 	}
@@ -23,7 +22,7 @@ class roof
 			rectMode(CENTER)
 			//strokeWeight(4);
 			fill("pink")
-			rect(groundPos.x, groundPos.y ,this.w, this.h);
+			rect(groundPos.x, groundPos.y ,this.width, this.height);
 			pop();
 			
 	}
